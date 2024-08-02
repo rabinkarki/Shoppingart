@@ -1,5 +1,5 @@
 import React from "react";
-import { BsCartFill } from "react-icons/bs";
+import {BsCartFill} from "react-icons/bs";
 
 function Header() {
     return (
