@@ -17,9 +17,9 @@ function productCard(props) {
         },3000)
     }
   return (
-    <div className='max-w-180  border-2 rounded-sm ml-5 text-xl p-4   text-center '>
-        <figure className='max-w-90  border-2 rounded-'>
-      <img src={img} className='max-h-40' alt='no image' />
+    <div className='w-1/5 flex-1 h-fit box-border border-2 rounded-sm  p-9  text-center  '>
+        <figure className='  border-2 rounded-'>
+      <img src={img} className=' max-h-40' alt='no image' />
     </figure>
     <div>
         {rating}
