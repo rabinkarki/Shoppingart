@@ -10,6 +10,7 @@ const cartSlice = createSlice({
     reducers: {
         toggleCart(state, action) {
             state.isCartOpen = action.payload;
+            console.log(state.isCartOpen);
         },
 
         addItem(state, action) {
@@ -25,9 +26,7 @@ const cartSlice = createSlice({
         },
 
         removeItem(state, action) {
-            state.cartItems = state.cartItems.filter(
-                (cart = cart.id !== action.payload.id)
-            );
+            state.cartItems = state.cartItems.filter((item) =>item.id !== action.payload);
         },
 
         incrementItem(state, action) {
